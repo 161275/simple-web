@@ -13,6 +13,7 @@ pipeline {
             agent {
                 docker{
                     image 'nodeimg'
+                    reuseNode true
                 }
             }
             steps{
