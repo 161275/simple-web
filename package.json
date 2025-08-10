@@ -3,6 +3,6 @@
     "express": "4.21.2"
   },
   "scripts": {
-    "start": "PORT=4000 node index.js"
+    "start": "PORT=4000 HOST=127.0.0.1 node index.js"
   }
 }
