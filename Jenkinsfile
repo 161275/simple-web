@@ -10,16 +10,8 @@ pipeline {
             }
         }
         stage('run-app'){
-            agent {
-                docker{
-                    image 'nodeimg'
-                    reuseNode true
-                }
-            }
             steps{
-                sh 'npm --version'
-                sh 'npm install'
-                sh 'npm start'
+                sh 'docker run -p 8000:8080 nodeimg'
             }
         }
     }
