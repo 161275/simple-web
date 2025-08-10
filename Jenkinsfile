@@ -10,6 +10,9 @@ pipeline {
             }
         }
         stage('run-app'){
+            agent docker{
+                image 'nodeimg'
+            }
             steps{
                 sh 'npm start'
             }
