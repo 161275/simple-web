@@ -11,7 +11,7 @@ pipeline {
         }
         stage('run-app'){
             steps{
-                sh 'docker run -p 8000:8080 nodeimg'
+                sh 'docker run -p 4000:8080 nodeimg'
             }
         }
     }
