@@ -17,6 +17,7 @@ pipeline {
             }
             steps{
                 sh 'npm --version'
+                sh 'npm ci'
                 sh 'npm run build'
             }
         }
